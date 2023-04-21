@@ -5,66 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tom's Jazz School</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="/Landing Page/index.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
-        <img src="/img/logo.svg" alt="Tom's Jazz School">
-        <nav>
+        <div class="conteiner">
+            <img src="/Landing Page/img/logo.svg" alt="Tom's Jazz School">
+            <nav>
             <a href="#">Inicio</a>
             <a href="#">Cursos</a>
             <a href="#">Eventos</a>
             <a href="#">Contato</a>
         </nav>
-        <a href="#" class="button">Se inscreva</a>
+        <a href="#" class="button mt-1 mb-1 nx-auto">Se inscreva</a>
+        </div>
     </header>
     <main>
-        <section>
-            <img src="/img/hero-img.svg" alt="Banda de Jazz tocando">
-            <div>
-                <h1>Crie Algo <span>Impactante</span> com música</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae suscipit quas fugiat a! Repellendus libero aliquid alias magnam deserunt?</p>
-                <a href="#" class="button">Comece agora</a>
+        <section class="hero-section">
+            <div class="conteiner">
+                <img src="/Landing Page/img/hero-img.svg" alt="Banda de Jazz tocando">
+                <div>
+                    <h1 class="mt-2">Crie Algo <span class="text-primary decoration">Impactante</span> com música</h1>
+                    <p class="mt-2 mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae suscipit quas fugiat a! Repellendus libero aliquid alias magnam deserunt?</p>
+                    <a href="#" class="button">Comece agora</a>
+                </div>
             </div>
         </section>
-        <section>
+        <section class="courses-section">
             <div class="cards">
-                <article>
-                    <img src="/img/piano.png" alt="icone de teclas de piano">
+                <article class="card">
+                    <img src="/Landing Page/img/piano.png" alt="icone de teclas de piano">
                     <strong>Piano popular</strong>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                     <a href="#">
-                        <img src="/img/arrow-right.svg" alt="ir para página do curso">
+                        <img src="/Landing Page/img/arrow-right.svg" alt="ir para página do curso">
                     </a>
                 </article>
-                <article>
-                    <img src="/img/clef.png" alt="icone da clave de sol">
+                <article class="card">
+                    <img src="/Landing Page/img/clef.png" alt="icone da clave de sol">
                     <strong>Teoria Musical</strong>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                     <a href="#">
-                        <img src="/img/arrow-right.svg" alt="ir para página do curso">
+                        <img src="/Landing Page/img/arrow-right.svg" alt="ir para página do curso">
                     </a>
                 </article>
-                <article>
-                    <img src="/img/sax.png" alt="icone de teclas de saxofone">
+                <article class="card">
+                    <img src="/Landing Page/img/sax.png" alt="icone de teclas de saxofone">
                     <strong>Sax alto</strong>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                     <a href="#">
-                        <img src="/img/arrow-right.svg" alt="ir para página do curso">
+                        <img src="/Landing Page/img/arrow-right.svg" alt="ir para página do curso">
                     </a>
                 </article>
-                <article>
-                    <img src="/img/drums.png" alt="icone de bateria">
+                <article class="card">
+                    <img src="/Landing Page/img/drums.png" alt="icone de bateria">
                     <strong>Bateria</strong>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                     <a href="#">
-                        <img src="/img/arrow-right.svg" alt="ir para página do curso">
+                        <img src="/Landing Page/img/arrow-right.svg" alt="ir para página do curso">
                     </a>
                 </article>
             </div>
 
-            <h2>E <span>varios</span> outros!</h2>
-            <a href="#">Conhecer os Cursos</a>
+            <h2 class="text-center">E <span class="text-primary">varios</span> outros!</h2>
+            <a href="#" class="button mt-2 nx-auto">Conhecer os Cursos</a>
         </section>
     </main>
+
+    <footer>
+        <div class="conteiner">
+            <div class="about-column">
+                <img src="/Landing Page/img/logo.svg" alt="Tom's Jazz School" class="mt-1 mb-2">
+                <p class="mb-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga consectetur perferendis veritatis unde numquam!</p>
+            </div>
+            <nav class="mb-2">
+                <a href="#">Inicio</a>
+                <a href="#">Cursos</a>
+                <a href="#">Eventos</a>
+                <a href="#">Contato</a>
+            </nav>
+            <form class="newsLetter-form">
+                <label for="email" class="mb-1">Receba materiais gratuitos no seu email!!</label>
+                <input type="text" name="email" id="email" class="mb-1" placeholder="Digite seu e-mail">
+                <button class="button mb-2">Quero receber</button>        
+            </form>
+        </div>
+    </footer>
 </body>
 </html>
